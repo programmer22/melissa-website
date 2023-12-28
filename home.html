@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Frederick - Shamanic Plant Medicine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 border-2 border-black">
+
+    <!-- Banner -->
+    <section class="bg-purple-600 text-white text-center py-2">
+        <p class="text-sm md:text-base">JOIN THE COMMUNITY FOR EMPOWERING RESOURCES AND NEW OFFERINGS!</p>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="bg-purple-500 text-white p-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-2xl font-bold">Melissa Frederick</a>
+                </div>
+                <div>
+                    <a href="#" class="mr-4">Learn More</a>
+                    <a href="#" id="messageLink">Message Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Message Me Form Overlay -->
+    <div id="messageForm" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" style="backdrop-filter: blur(5px);">
+        <div class="bg-white p-5 rounded-lg relative max-w-md w-full mx-4">
+            <button id="closeForm" class="absolute top-0 right-0 m-2 text-red-600 text-3xl">&times;</button>
+            <form action="https://formspree.io/f/yourFormId" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="email" name="_replyto" placeholder="Your Email" required class="w-full px-3 py-2 border rounded mb-4">
+                <input type="text" name="subject" placeholder="Subject" required class="w-full px-3 py-2 border rounded mb-4">
+                <textarea name="message" placeholder="Message" rows="4" required class="w-full px-3 py-2 border rounded mb-4"></textarea>
+                <div class="flex justify-between">
+                    <button type="reset" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500">Clear</button>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Banner Image -->
+    <section class="relative">
+        <img src="melissa.jpg" alt="Shamanic Healing Banner" class="w-full">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <h2 class="text-white text-3xl font-bold mb-4">Shamanic Healing</h2>
+            <p class="text-white text-xl">Discover the magic within</p>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto mt-10">
+        <div class="flex items-center gap-4">
+            <div class="w-1/2">
+                <h1 class="text-4xl font-bold mb-4">I am Melissa Frederick.</h1>
+                <!-- <p class="text-lg mb-4">A Shamanic Plant Medicine woman here creating magical portals for women and couples to heal, activate, expand, and shine.</p>
+                <p class="text-lg">I believe that healing no longer needs to be difficult and that your magic is right at your fingertips. You just need the right tools.</p>
+                <p class="text-lg mt-4">I utilize psilocybin as a tool to help you activate your own healing and magic within. I educate, facilitate, hold space, and help you heal through and integrate custom journey experiences as well as hold microdosing masterminds. I offer powerful shamanic energy work, sound healing, and Gene Keys readings alongside my medicine work.</p> -->
+                <p class="text-lg mt-4">My healing journey began when I was an infant and had to undergo open heart surgery. I have had massive physical heart healing, having now journeyed through 3 open hearts and other multiple microscopic surgeries, along with an over 200lb weight loss journey. I have been on the self-work path since I was sent to a somewhat therapeutic boarding school at age 14, right after my Grandfather died and opened the portal for my gift of sight to flood in. I believe my physical healing journey along with my psychic abilities naturally led me to this work.</p>
+                <p class="text-lg mt-4">That moment came in the fall of 2015 when I was on an intimate women’s business retreat with my then coach and a woman who I would come to know as my healing mentor and close friend Celeste Lemieux. I was rooming together in a loft-style space with one of my closest friends and towards the end of retreat one night I was up in my loft area getting ready for bed when these two rushed into the room. In hearing the commotion I looked down from my space to see my friend receiving an exorcism. As I held space for this massive clearing and healing taking place I knew this was the work I would eventually be offering.  I shifted into motherhood and continued my spiritual and healing journey behind the scenes, continuing to learn from my mentors.</p>
+                <p class="text-lg mt-4">I began working with the magic of mushroom medicine under Celeste’s guidance in 2018 and in the summer of 2020 I completed a 7-month Shamanic Apprenticeship with my long-time shaman, Andye Murphy.  I have gone on to become Trauma Informed, Human Design, & Gene Keys certified. I continue receiving mentorship from healers and mentors old and new.</p>
+                <p class="text-lg mt-4">Throughout my journey I have received many healings, activations, gifts, and re-memberings. My work in this realm is ongoing, for me it’s a life-long journey of evolution.</p>
+                <p class="text-lg mt-4">I combine my life experiences with my knowledge in Shamanic Energy Work, Donna Eden Energy Medicine, Trauma, Coaching, and Plant Medicine to bring you a unique journey and healing experience.</p>
+            </div>
+            <div class="w-1/2">
+                <img src="melissa2.jpg" alt="Melissa Frederick" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Now Button -->
+    <div class="text-center py-8 space-x-3">
+        <a href="#booking" class="bg-gray-400 text-white px-8 py-3 rounded-full hover:bg-red-600 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-700 transition duration-150 ease-in-out">
+            Learn More
+        </a>
+
+        <a href="https://savvycal.com/melissafrederick/fab06296?sid=9fe96b1f-c47d-4fcc-8c98-1fbe709f5bdf&from=2023-12-28" class="bg-purple-500 text-white px-8 py-3 rounded-full hover:bg-red-600 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 active:bg-red-700 transition duration-150 ease-in-out">
+            Book Now
+        </a>
+    </div>
+
+
+    <!-- Instagram Photo Gallery Section -->
+    <section class="container mx-auto my-12 p-4">
+        <h2 class="text-center text-2xl font-bold mb-6">Instagram Gallery</h2>
+        <div id="instagram-feed" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Photos will be inserted here dynamically -->
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <div class="bg-gray-100">
+        <section class="container mx-auto mt-16 py-8 bg-gray-100 rounded-lg">
+            <h2 class="text-3xl font-bold text-center mb-6">What People Are Saying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4 italic">"After my sessions with Melissa, I felt a profound shift in my energy and clarity in my purpose. She is truly gifted."</p>
+                    <div class="flex items-center">
+                        <img src="path_to_client1_image.jpg" alt="Client Name" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Jane Doe</h3>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4 italic">"Melissa's approach to healing is compassionate, thorough, and transformative. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="path_to_client2_image.jpg" alt="Client Name" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">John Smith</h3>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-6 bg-gray-100">
+        <h2 class="text-3xl mb-6 text-center">Contact Me</h2>
+        <form action="/submit_form" method="post" class="max-w-md mx-auto space-y-4">
+            <div>
+                <label for="name" class="block mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+                <label for="message" class="block mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+            </div>
+        </form>
+    </section>
+    
+
+
+    <!-- Footer Section -->
+    <footer class="bg-purple-500 text-white mt-16 py-4">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <p>&copy; 2023 Melissa Frederick. All rights reserved.</p>
+                <p>&copy; Nick Lopacki Developer 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/path-to-your-server-endpoint')
+                .then(response => response.json())
+                .then(data => displayPhotos(data.photos));
+
+            function displayPhotos(photos) {
+                const gallery = document.getElementById('instagram-feed');
+                photos.forEach(photo => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = photo.media_url;
+                    imgElement.alt = 'Instagram Photo';
+                    imgElement.classList.add('w-full', 'h-56', 'object-cover'); // Tailwind classes
+                    gallery.appendChild(imgElement);
+                });
+            }
+        });
+
+
+
+        document.getElementById('messageLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('messageForm').classList.remove('hidden');
+        });
+
+        document.getElementById('closeForm').addEventListener('click', function() {
+            document.getElementById('messageForm').classList.add('hidden');
+        });
+
+
+        // Conect SaavyCal to Book Now Button
+    </script>
+
+</body>
+
+</html>
