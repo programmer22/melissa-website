@@ -109,16 +109,82 @@
     <section class="container mx-auto my-12 p-4">
         <h2 class="text-center text-2xl font-bold mb-6">Instagram Gallery</h2>
         <div id="instagram-feed" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Photos will be inserted here dynamically -->
+            <!-- Card 1 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <p class="text-gray-700 text-base">Photo description</p>
+                </div>
+            </div>
         </div>
     </section>
 
 
+
     <!-- Testimonials Section -->
-    <div class="xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">
+    <div class="xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl mb-12">
         <section class="container mx-auto mt-16 py-8 bg-gray-100 rounded-lg">
             <h2 class="text-3xl font-bold text-center mb-6">What People Are Saying</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4 italic">"After my sessions with Melissa, I felt a profound shift in my energy and clarity in my purpose. She is truly gifted."</p>
+                    <div class="flex items-center">
+                        <img src="path_to_client1_image.jpg" alt="Client Name" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Claire Reynolds</h3>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="mb-4 italic">"Melissa's approach to healing is compassionate, thorough, and transformative. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="path_to_client2_image.jpg" alt="Client Name" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Ashley Smith</h3>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Testimonial 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <p class="mb-4 italic">"After my sessions with Melissa, I felt a profound shift in my energy and clarity in my purpose. She is truly gifted."</p>
@@ -148,30 +214,19 @@
 
     <!-- Contact Section -->
     <div class="container mx-auto">
-        <h1>Sign Up</h1>
-        <form class="form">
+        <h1 class="text-3xl font-bold text-center mb-6">Contact Me</h1>
+        <form action="https://formspree.io/f/mpzgjkak" method="POST" class="form">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="_replyto" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="radio-group">
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </div>
             </div>
             <div class="form-group">
                 <label for="country">Country</label>
@@ -187,14 +242,25 @@
                 <textarea id="message" name="message" rows="4"></textarea>
             </div>
             <div class="form-group">
-                <label for="subscribe">Subscribe to Newsletter</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe-yes">Subscribe to Newsletter</label>
+                <div class="flex gap-4">
+                    <div class="block">
+                        <input type="radio" id="subscribe-yes" name="subscribe" value="yes">
+                        <label for="subscribe-yes">Yes</label>
+                    </div>
+
+                    <div class="block">
+                        <input type="radio" id="subscribe-no" name="subscribe" value="no">
+                        <label for="subscribe-no">No</label>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
                 <button type="submit">Submit</button>
             </div>
         </form>
     </div>
+
 
     <!-- Footer Section -->
     <footer class="text-white mt-16 py-4 xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl" style="background-color:#30d5c8;">
