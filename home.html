@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-       
+
     </style>
 </head>
 <body class="text-gray-800">
@@ -17,20 +17,26 @@
         <a href="join-now-form.html" class="text-sm md:text-base">JOIN NOW FOR A NEW YEAR DISCOUNT!</a>
     </section>
 
-    <nav class="bg-teal-400 text-black p-4">
-        <div class="flex justify-between items-center container mx-auto">
-            <!-- Title aligned to the left -->
-            <a href="#" class="text-2xl font-bold">Melissa Frederick</a>
-            
-            <!-- Navigation links aligned to the right -->
-            <div class="flex items-center">
-                <a href="#my-story" class="mr-4">Learn More</a>
-                <a href="#" id="messageLink">Message Me</a>
-            </div>
+    <nav class="bg-teal-500 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4 lg:px-8">
+        <!-- Branding and Title -->
+        <a href="#" class="text-3xl font-semibold tracking-tight transition duration-300 ease-in-out transform hover:scale-105">
+            Melissa Frederick
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center text-lg space-x-6">
+            <a href="#my-story" class="transition duration-300 ease-in-out hover:text-teal-200">
+                Learn More
+            </a>
+            <a href="#" id="messageLink" class="py-2 px-4 bg-white text-teal-600 rounded-full shadow transition duration-300 ease-in-out hover:bg-teal-50">
+                Message Me
+            </a>
         </div>
-    </nav>
-    
-    
+    </div>
+</nav>
+
+
 
     <!-- Message Me Form Overlay -->
     <div id="messageForm" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50" style="backdrop-filter: blur(10px);">
@@ -43,13 +49,13 @@
             <h3 class="text-2xl font-semibold mb-6">Message Me</h3>
             <form action="https://formspree.io/f/mpzgjkak" method="POST" class="space-y-6">
                 <input type="hidden" name="_subject" value="New submission!">
-                
+
                 <div class="space-y-2">
                     <input type="email" name="_replyto" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out">
                     <input type="text" name="subject" placeholder="Subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out">
                     <textarea name="message" placeholder="Message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out"></textarea>
                 </div>
-                
+
                 <div class="flex justify-end space-x-4">
                     <button type="reset" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 focus:ring-2 focus:ring-gray-600 focus:outline-none transition duration-150 ease-in-out">Clear</button>
                     <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-600 focus:outline-none transition duration-150 ease-in-out">Submit</button>
@@ -99,25 +105,25 @@
     </div>
 
     <!-- Learn More Modal Overlay -->
-<div id="learnMoreModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50" style="backdrop-filter: blur(10px);">
-    <div class="bg-white p-8 rounded-xl relative max-w-2xl w-full mx-4 overflow-y-auto max-h-3/4 shadow-2xl">
-        <button id="closeLearnMore" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 text-3xl z-50 focus:outline-none" aria-label="Close">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-        <div class="text-gray-700">
-            <h3 class="text-2xl font-semibold mb-6">Learn More About Melissa Frederick</h3>
-            <p class="mb-4 leading-relaxed">My healing journey began when I was an infant and had to undergo open heart surgery. I have had massive physical heart healing, having now journeyed through 3 open hearts and other multiple microscopic surgeries, along with an over 200lb weight loss journey...</p>
-            <p class="mb-4 leading-relaxed">That moment came in the fall of 2015 when I was on an intimate women’s business retreat. There, I realized the profound impact of my experiences and decided to embark on a path of healing and discovery...</p>
-            <!-- ... additional content ... -->
-            <p class="mb-4 leading-relaxed">I began working with the magic of mushroom medicine under Celeste’s guidance in 2018 and in the summer of 2020, I completed a 7-month Shamanic Apprenticeship...</p>
-            <!-- ... additional content ... -->
-            <p class="mb-4 leading-relaxed">Throughout my journey, I have received many healings, activations, gifts, and re-memberings. My work in this realm is ongoing, and for me, it’s a life-long journey of evolution...</p>
-            <p class="mb-4 leading-relaxed">I combine my life experiences with my knowledge in Shamanic Energy Work, Donna Eden Energy Medicine, Trauma, Coaching, and Plant Medicine to bring you a unique journey and healing experience.</p>
+    <div id="learnMoreModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50" style="backdrop-filter: blur(10px);">
+        <div class="bg-white p-8 rounded-xl relative max-w-2xl w-full mx-4 overflow-y-auto max-h-3/4 shadow-2xl">
+            <button id="closeLearnMore" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 text-3xl z-50 focus:outline-none" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="text-gray-700">
+                <h3 class="text-2xl font-semibold mb-6">Learn More About Melissa Frederick</h3>
+                <p class="mb-4 leading-relaxed">My healing journey began when I was an infant and had to undergo open heart surgery. I have had massive physical heart healing, having now journeyed through 3 open hearts and other multiple microscopic surgeries, along with an over 200lb weight loss journey...</p>
+                <p class="mb-4 leading-relaxed">That moment came in the fall of 2015 when I was on an intimate women’s business retreat. There, I realized the profound impact of my experiences and decided to embark on a path of healing and discovery...</p>
+                <!-- ... additional content ... -->
+                <p class="mb-4 leading-relaxed">I began working with the magic of mushroom medicine under Celeste’s guidance in 2018 and in the summer of 2020, I completed a 7-month Shamanic Apprenticeship...</p>
+                <!-- ... additional content ... -->
+                <p class="mb-4 leading-relaxed">Throughout my journey, I have received many healings, activations, gifts, and re-memberings. My work in this realm is ongoing, and for me, it’s a life-long journey of evolution...</p>
+                <p class="mb-4 leading-relaxed">I combine my life experiences with my knowledge in Shamanic Energy Work, Donna Eden Energy Medicine, Trauma, Coaching, and Plant Medicine to bring you a unique journey and healing experience.</p>
+            </div>
         </div>
     </div>
-</div>
 
 
 
@@ -127,45 +133,45 @@
         <div id="instagram-feed" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Card 1 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?mushrooms" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Mushroom Therapy</p>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?journey" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Journey</p>
                 </div>
             </div>
             <!-- Card 3 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?healing" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Healing</p>
                 </div>
             </div>
 
             <!-- Card 1 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?trauma" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Trauma</p>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?health" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Health</p>
                 </div>
             </div>
             <!-- Card 3 -->
             <div class="bg-white overflow-hidden shadow rounded-lg">
-                <img src="https://source.unsplash.com/random/800x600" alt="Instagram Photo" class="w-full h-56 object-cover">
+                <img src="https://source.unsplash.com/random/800x600?happy" alt="Instagram Photo" class="w-full h-56 object-cover">
                 <div class="p-4">
-                    <p class="text-gray-700 text-base">Photo description</p>
+                    <p class="text-gray-700 text-base">Happy</p>
                 </div>
             </div>
         </div>
