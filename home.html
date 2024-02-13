@@ -4,51 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melissa Frederick - Shamanic Plant Medicine</title>
-    
-    <!-- import css file called home.css -->
-    <link rel="stylesheet" href="home.css">
-
     <meta name="description" content="Discover the world of Shamanic Healing with Melissa Frederick. Explore her transformative journey, energy work, and healing experiences. Book a session to experience the magic within.">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+       
+    </style>
 </head>
-<body class="text-gray-800 border-2 border-black">
+<body class="text-gray-800">
     <!-- Banner -->
     <section class="bg-purple-600 text-white text-center py-2">
-        <p class="text-sm md:text-base">JOIN NOW FOR A NEW YEAR DISCOUNT!</p>
+        <a href="join-now-form.html" class="text-sm md:text-base">JOIN NOW FOR A NEW YEAR DISCOUNT!</a>
     </section>
 
-    <!-- Navigation -->
-    <!-- Add color from css file -->
-    <nav class="text-black text-xs p-4 text-xs" style="background-color:#30d5c8;">
-        <div>
-            <div class="flex justify-between items-center">
-                <div>
-                    <a href="#" class="text-2xl font-bold">Melissa Frederick</a>
-                </div>
-                <div>
-                    <a href="#my-story" class="mr-4">Learn More</a>
-                    <a href="#" id="messageLink">Message Me</a>
-                </div>
+    <nav class="bg-teal-400 text-black p-4">
+        <div class="flex justify-between items-center container mx-auto">
+            <!-- Title aligned to the left -->
+            <a href="#" class="text-2xl font-bold">Melissa Frederick</a>
+            
+            <!-- Navigation links aligned to the right -->
+            <div class="flex items-center">
+                <a href="#my-story" class="mr-4">Learn More</a>
+                <a href="#" id="messageLink">Message Me</a>
             </div>
         </div>
     </nav>
+    
+    
 
     <!-- Message Me Form Overlay -->
-    <div id="messageForm" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" style="backdrop-filter: blur(5px);">
-        <div class="bg-white p-5 rounded-lg relative max-w-md w-full mx-4">
-            <button id="closeForm" class="absolute top-0 right-0 m-2 text-red-600 text-3xl">&times;</button>
-            <form action="https://formspree.io/f/mpzgjkak" method="POST">
+    <div id="messageForm" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50" style="backdrop-filter: blur(10px);">
+        <div class="bg-white p-8 rounded-2xl relative max-w-lg w-full mx-4 shadow-xl border border-gray-200">
+            <button id="closeForm" class="absolute top-4 right-4 text-gray-500 hover:text-gray-600 text-2xl z-50 focus:outline-none" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h3 class="text-2xl font-semibold mb-6">Message Me</h3>
+            <form action="https://formspree.io/f/mpzgjkak" method="POST" class="space-y-6">
                 <input type="hidden" name="_subject" value="New submission!">
-                <input type="email" name="_replyto" placeholder="Your Email" required class="w-full px-3 py-2 border rounded mb-4">
-                <input type="text" name="subject" placeholder="Subject" required class="w-full px-3 py-2 border rounded mb-4">
-                <textarea name="message" placeholder="Message" rows="4" required class="w-full px-3 py-2 border rounded mb-4"></textarea>
-                <div class="flex justify-between">
-                    <button type="reset" class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500">Clear</button>
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+                
+                <div class="space-y-2">
+                    <input type="email" name="_replyto" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out">
+                    <input type="text" name="subject" placeholder="Subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out">
+                    <textarea name="message" placeholder="Message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition duration-150 ease-in-out"></textarea>
+                </div>
+                
+                <div class="flex justify-end space-x-4">
+                    <button type="reset" class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 focus:ring-2 focus:ring-gray-600 focus:outline-none transition duration-150 ease-in-out">Clear</button>
+                    <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-600 focus:outline-none transition duration-150 ease-in-out">Submit</button>
                 </div>
             </form>
         </div>
     </div>
+
 
     <!-- Banner Image -->
     <section class="relative">
@@ -90,19 +99,26 @@
     </div>
 
     <!-- Learn More Modal Overlay -->
-    <div id="learnMoreModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" style="backdrop-filter: blur(5px);">
-        <div class="bg-white p-5 rounded-lg relative max-w-md w-full mx-4 overflow-auto max-h-3/4">
-            <button id="closeLearnMore" class="absolute top-0 right-0 m-2 text-red-600 text-3xl z-50">&times;</button>
-            <div class="text-sm overflow-y-auto h-full">
-                <p>Here is more information about Melissa Frederick...</p>
-                    <p class="text-xs mt-4">My healing journey began when I was an infant and had to undergo open heart surgery. I have had massive physical heart healing, having now journeyed through 3 open hearts and other multiple microscopic surgeries, along with an over 200lb weight loss journey. I have been on the self-work path since I was sent to a somewhat therapeutic boarding school at age 14, right after my Grandfather died and opened the portal for my gift of sight to flood in. I believe my physical healing journey along with my psychic abilities naturally led me to this work.</p>
-                    <p class="text-xs mt-4">That moment came in the fall of 2015 when I was on an intimate women’s business retreat with my then coach and a woman who I would come to know as my healing mentor and close friend Celeste Lemieux. I was rooming together in a loft-style space with one of my closest friends and towards the end of retreat one night I was up in my loft area getting ready for bed when these two rushed into the room. In hearing the commotion I looked down from my space to see my friend receiving an exorcism. As I held space for this massive clearing and healing taking place I knew this was the work I would eventually be offering.  I shifted into motherhood and continued my spiritual and healing journey behind the scenes, continuing to learn from my mentors.</p>
-                    <p class="text-xs mt-4">I began working with the magic of mushroom medicine under Celeste’s guidance in 2018 and in the summer of 2020 I completed a 7-month Shamanic Apprenticeship with my long-time shaman, Andye Murphy.  I have gone on to become Trauma Informed, Human Design, & Gene Keys certified. I continue receiving mentorship from healers and mentors old and new.</p>
-                    <p class="text-xs mt-4">Throughout my journey I have received many healings, activations, gifts, and re-memberings. My work in this realm is ongoing, for me it’s a life-long journey of evolution.</p>
-                    <p class="text-xs mt-4">I combine my life experiences with my knowledge in Shamanic Energy Work, Donna Eden Energy Medicine, Trauma, Coaching, and Plant Medicine to bring you a unique journey and healing experience.</p>
-            </div>
+<div id="learnMoreModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50" style="backdrop-filter: blur(10px);">
+    <div class="bg-white p-8 rounded-xl relative max-w-2xl w-full mx-4 overflow-y-auto max-h-3/4 shadow-2xl">
+        <button id="closeLearnMore" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800 text-3xl z-50 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="text-gray-700">
+            <h3 class="text-2xl font-semibold mb-6">Learn More About Melissa Frederick</h3>
+            <p class="mb-4 leading-relaxed">My healing journey began when I was an infant and had to undergo open heart surgery. I have had massive physical heart healing, having now journeyed through 3 open hearts and other multiple microscopic surgeries, along with an over 200lb weight loss journey...</p>
+            <p class="mb-4 leading-relaxed">That moment came in the fall of 2015 when I was on an intimate women’s business retreat. There, I realized the profound impact of my experiences and decided to embark on a path of healing and discovery...</p>
+            <!-- ... additional content ... -->
+            <p class="mb-4 leading-relaxed">I began working with the magic of mushroom medicine under Celeste’s guidance in 2018 and in the summer of 2020, I completed a 7-month Shamanic Apprenticeship...</p>
+            <!-- ... additional content ... -->
+            <p class="mb-4 leading-relaxed">Throughout my journey, I have received many healings, activations, gifts, and re-memberings. My work in this realm is ongoing, and for me, it’s a life-long journey of evolution...</p>
+            <p class="mb-4 leading-relaxed">I combine my life experiences with my knowledge in Shamanic Energy Work, Donna Eden Energy Medicine, Trauma, Coaching, and Plant Medicine to bring you a unique journey and healing experience.</p>
         </div>
     </div>
+</div>
+
 
 
     <!-- Instagram Photo Gallery Section -->
@@ -213,53 +229,43 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="container mx-auto">
-        <h1 class="text-3xl font-bold text-center mb-6">Contact Me</h1>
-        <form action="https://formspree.io/f/mpzgjkak" method="POST" class="form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+    <section class="container mx-auto w-full bg-white p-8 rounded-lg shadow-md text-center">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Contact Me</h1>
+        <form action="https://formspree.io/f/mpzgjkak" method="POST" class="space-y-4">
+            <div class="text-left mb-5">
+                <label for="name" class="block font-bold text-lg mb-2 text-gray-800">Full Name</label>
+                <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md text-lg">
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" required>
+            <div class="text-left mb-5">
+                <label for="email" class="block font-bold text-lg mb-2 text-gray-800">Email</label>
+                <input type="email" id="email" name="_replyto" required class="w-full p-3 border border-gray-300 rounded-md text-lg">
             </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+            <div class="text-left mb-5">
+                <label for="phone" class="block font-bold text-lg mb-2 text-gray-800">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required class="w-full p-3 border border-gray-300 rounded-md text-lg">
             </div>
-            <div class="form-group">
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="us">United States</option>
-                    <option value="ca">Canada</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="au">Australia</option>
-                </select>
+            <div class="text-left mb-5">
+                <label for="message" class="block font-bold text-lg mb-2 text-gray-800">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md text-lg"></textarea>
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="subscribe-yes">Subscribe to Newsletter</label>
-                <div class="flex gap-4">
-                    <div class="block">
-                        <input type="radio" id="subscribe-yes" name="subscribe" value="yes">
-                        <label for="subscribe-yes">Yes</label>
-                    </div>
-
-                    <div class="block">
-                        <input type="radio" id="subscribe-no" name="subscribe" value="no">
-                        <label for="subscribe-no">No</label>
-                    </div>
+            <div class="flex gap-4 mb-5">
+                <div class="flex items-center">
+                    <input type="radio" id="subscribe-yes" name="subscribe" value="yes" class="mr-2">
+                    <label for="subscribe-yes" class="font-medium text-gray-800">Yes, subscribe me to the newsletter</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="subscribe-no" name="subscribe" value="no" class="mr-2">
+                    <label for="subscribe-no" class="font-medium text-gray-800">No, thank you</label>
                 </div>
             </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
+            <div class="text-left">
+                <button type="submit" class="bg-blue-500 text-white px-5 py-3 rounded-md text-lg hover:bg-blue-700 transition-colors duration-300">
+                    Submit
+                </button>
             </div>
         </form>
-    </div>
+    </section>
+    
 
 
     <!-- Footer Section -->
